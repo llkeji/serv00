@@ -21,5 +21,5 @@
 
 
 if [ ! -e "$HOME/.npm-global" ]; then
-  echo ‘6666’
+  echo "6666"
 fi
