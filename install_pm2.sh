@@ -23,3 +23,6 @@
 if [ ! -e "$HOME/.npm-global" ]; then
   echo "6666"
 fi
+
+
+echo "哈哈哈"
