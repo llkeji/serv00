@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # 检查 ~/.npm-global 文件夹是否存在，如果不存在则创建
-if [ ! -d "~/.npm-global" ]; then
-  mkdir ~/.npm-global
+if [ ! -d "$HOME/.npm-global" ]; then
+  mkdir "$HOME/.npm-global"
 fi
 
 # 设置 npm 的 prefix
@@ -16,6 +16,5 @@ source ~/.bashrc
 if ! command -v pm2 &> /dev/null; then
   npm install -g pm2
 fi
-
 
 echo "如果下次重新登陆SSH后pm2的工作目录变量设置失效，你可以重新执行本脚本或者直接使用 ~/npm-global/bin/pm2 来调用pm2"
